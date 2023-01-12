@@ -15,9 +15,9 @@ export default function ProductDetail() {
     let alert = useAlert()
 
     let getProduct = ()=>{
-        fetch(`https://kfc-backend.herokuapp.com/kfc/products/productID/${slug}`)
-        .then((resp)=>resp.json())
-        .then((data)=>setProduct(data.product))
+        fetch(`http://localhost:8000/kfc/products/productID/${slug}`)
+					.then((resp) => resp.json())
+					.then((data) => setProduct(data.product));
     }
     
     //INCREMENT PRODUCT QUANTITY
