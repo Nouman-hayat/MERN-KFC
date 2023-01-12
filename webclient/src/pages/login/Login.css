@@ -1,0 +1,143 @@
+.login-inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: flex-end;
+}
+.login-inner div:last-child{
+    justify-self: flex-start;
+    border-right: none;
+}
+.login-inner-col{
+    border-right: 1px solid var(--navbarBG);
+    margin-top: 25px;
+    padding: 50px 80px 60px 80px;
+}
+.login-inner-col p{
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.create-account{
+    border: 1px solid var(--primary-red);
+    color: var(--primary-red) !important;
+    letter-spacing: 1px;
+    padding: 8px 20px;
+    font-size: 18px;
+    background-color: transparent;
+    transition: all 300ms ease;
+    margin-top: 20px;
+}
+.create-account:hover{
+    background-color: var(--primary-red);
+    color: white !important; 
+    text-decoration: none !important;
+}
+.login-inner-col-heading{
+    font-size: 33px;
+}
+
+.register .custom-container .social-links{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    padding: 30px 40px;
+    border-top: 1px solid rgba(0,0,0,.12);
+    border-bottom: 1px solid rgba(0,0,0,.12);
+}
+.social-links  .gmail{
+    border: unset;
+    background-color: #f2553b;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 21px;
+    padding: 6px 0;
+}
+
+.social-links  .fb{
+    margin-top: 10px;
+    border: unset;
+    background-color: #3b5998;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 21px;
+    padding: 6px 0;
+}
+
+.login-form-inner{
+    display: flex;
+    flex-direction: column;
+}
+.login-form-inner input{
+    width: 100%;
+    font-family: var(--assistant);
+    border: none;
+    border-bottom: 1px solid var(--primary-red);
+    background-color: transparent;
+    outline: none !important;
+}
+
+.form-item{
+    position: relative;
+    margin-bottom: 40px;
+}
+.form-item:last-of-type{
+    margin-bottom: 30px;
+}
+.form-item span{
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 300ms ease;
+    color: var(--primary-red);
+    font-size: 14px;
+    font-family: assistant;
+    letter-spacing: 0;
+}
+
+.form-item .remove-form-label{
+
+    transform:  translateY(-30px) scale(0.8) ;
+}
+.forgot-password{
+    background-color: transparent;
+    border: none;
+    align-self: flex-start;
+
+
+}
+.forgot-password a{
+
+    font-family: assistant;
+    text-transform: unset;
+    font-size: 13px;
+    color: var(--primary-red);
+}
+
+.sign-in{
+    margin-top: 30px;
+    background-color: var(--primary-red);
+    color: white;
+    border: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 6px 22px;
+    align-self: flex-start;
+}
+
+
+@media (max-width: 576px) {
+    .login-inner{
+        display: block;
+    }
+    .login-inner .login-inner-col{
+        padding: 0;
+        border: none;
+    }
+    .login-inner-col-heading{
+        margin: 20px 0;
+    }
+    .login-inner-col:last-child{
+        margin: 50px 0 ;
+    }
+}

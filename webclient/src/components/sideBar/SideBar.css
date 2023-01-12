@@ -1,0 +1,107 @@
+.side-bar-parent{
+    position: fixed;
+    inset: 0 0 0 0;
+    z-index: 10;
+}
+.side-bar-parent .side-bar-overlay{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(36, 35, 35, 0.6);
+}
+.side-bar-parent .side-bar-content{
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+}
+.side-bar-content-header{
+    padding: 30px 20px;
+    background-color: var(--blackText);
+    color: white;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+}
+.side-bar-content-header :last-child{
+    color: var(--primary-red);
+}
+.side-bar-content .address{
+    margin: 20px 0;
+    padding: 0 30px;
+    text-align: center;
+}
+.side-bar-content .address input{
+    border: none;
+    border-bottom: 1px solid rgb(228, 226, 226);
+    width: 100%;
+    font-size: 14px;
+    padding-bottom: 5px;
+    transition: all 300ms;
+}
+.side-bar-content .address input:focus{
+    outline: none;
+    border-bottom: 1px solid var(--primary-red);
+}
+
+.order-list{
+    padding:  30px;
+}
+.order-list .order-list-item:first-child{
+    margin-top: 0;
+}
+.order-list .order-list-item{
+    border-bottom: 1px solid rgb(228, 226, 226);
+    margin-top: 20px;
+}
+.order-list .order-list-item div:first-child{
+    display: flex;
+    justify-content: space-between;
+}
+.order-list .order-list-item span{
+    font-size: 17px;
+}
+.order-list .order-list-item span:last-of-type{
+    color: var(--primary-red);
+}
+
+.order-btn{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    background-color: var(--primary-red);
+    color: var(--primary-white);
+    border: none;
+    padding: 8px 30px;
+}
+.order-btn:hover{
+    color: var(--primary-white);
+}
+.list-item-actions{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+.list-item-actions button{
+    padding: 5px; 
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 15px;
+}
+.list-item-actions button i{
+    font-size: 12px;
+}
+.side-bar-skeleton {
+    font-family: var(--assistant);
+    text-align: center;
+    margin-top: 50%;
+    font-size: 14px;
+}
+.order-btn-inactive {
+    opacity: 0.6;
+}

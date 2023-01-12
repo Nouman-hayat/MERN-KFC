@@ -1,0 +1,74 @@
+.featured-products-parent{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    column-gap: 12px;
+    row-gap: 40px;
+    /*grid-template-columns: 33.3% 33.3% 33.3%;*/
+    grid-template-rows: 1fr;
+    margin-bottom: 40px;
+  }
+  .featured-product-card{
+
+    padding: 10px 10px;
+    margin-bottom: 8px; 
+    border: 1px solid transparent;
+    transition: all 200ms ;
+  }
+  .featured-product-card-inner{
+    height: 100%;
+    display: flex ;
+    flex-direction: column;
+  }
+  .featured-product-card:hover{
+    border: 1px solid var(--navbarBG);
+  }
+  .card-image img{
+    transition:  all 300ms;
+  }
+  .card-image:hover img{
+    opacity: 0.8;
+  }
+  .card-meal-name{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 20px 0 8px 0;
+    font-size: 18px;
+  }
+  .assistant{
+    font-family: 'Assistant', sans-serif;
+  }
+  .card-meal-details{
+    font-weight: 400;
+    font-size: 13px;
+    margin-bottom: 10px;
+  
+  }
+  .card-meal-details p{
+    margin-bottom: 0;
+  }
+  .card-meal-footer{
+    display: flex;
+    margin-top: auto;
+    align-items: center;
+    width: 100%;
+    
+  }
+  .card-meal-footer .card-price{
+    width: 50%;
+    border: 3px solid var(--primary-red);
+    text-transform: uppercase;
+    color:  var(--primary-red);
+    padding: 5px 0;
+    text-align: center;
+    font-size: 18px;
+  }
+  .card-meal-footer .add-to-bucket{
+    width: 50%;
+    border: 3px solid var(--primary-red);
+    background-color: var(--primary-red);
+    color: var(--primary-white);
+    letter-spacing: 1px;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 18px;
+  }

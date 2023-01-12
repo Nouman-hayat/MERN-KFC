@@ -1,0 +1,17 @@
+.featured-products-parent{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    column-gap: 12px;
+    row-gap: 40px;
+    /*grid-template-columns: 33.3% 33.3% 33.3%;*/
+    grid-template-rows: 1fr;
+    margin-bottom: 40px;
+  }
+
+@media (max-width : 576px)
+{
+  .featured-products-parent {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,125 @@
+.custom-container{
+    max-width: 780px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.register-main-heading{
+    margin: 26px 0 8px 0;
+    font-size: 27px;
+    padding: 20px;
+    background-color: var(--navbarBG);
+}
+.registered{
+    font-size: 14px;
+}
+.registered a{
+    color: var(--primary-red);
+    font-family: assistant;
+}
+
+.social-links{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    padding: 30px 10px;
+    border-top: 1px solid rgba(0,0,0,.12);
+    border-bottom: 1px solid rgba(0,0,0,.12);
+}
+.social-links  .gmail{
+    border: unset;
+    background-color: #f2553b;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 21px;
+    padding: 6px 0;
+}
+
+.social-links  .fb{
+    margin-top: 10px;
+    border: unset;
+    background-color: #3b5998;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 21px;
+    padding: 6px 0;
+}
+
+.register-heading{
+    font-size: 27px;
+}
+.contact-info-form .row :is(.col-6 , .col-4 , .col-12 , .col-2) {
+    position: relative;
+}
+.register-form{
+    margin-top: 26px;
+}
+.register-form-inner .col-12 , .col-lg-6{
+    position: relative;
+}
+.register-form-inner input , textarea , select{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,.4);
+    outline: none !important;
+    padding: 10px 0 0 0;
+    font-family: var(--assistant);
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.user-account-form{
+    margin-bottom: 40px;
+}
+
+.terms-conditions input{
+    width: unset;
+    margin: unset;
+}
+.terms-conditions .error-handler{
+    top: 15px;
+}
+.terms-conditions > div{
+    display: flex;
+    align-items: center;
+}
+.terms-conditions div:last-child{
+    margin: 12px 0 0 0;
+}
+.terms-conditions label{
+    margin: 0 0 0 8px;
+    font-family: var(--assistant);
+    font-size: 14px;
+}
+
+.error-handler{
+    display: block;
+    position: absolute;
+    top: 32px;
+    left: 15px;
+    color: var(--primary-red);
+    font-size: 11px;
+    font-family: var(--assistant);
+
+}
+
+.error-border{
+    border-bottom: 1px solid var(--primary-red) !important;
+} 
+
+@media (max-width : 576px)
+{
+    .register-form-inner :is(input , textarea , select ) {
+        margin-bottom: 20px !important;
+    }
+    .contact-info-form .row .col-2 {
+        width: 33.33%;
+    }
+    .terms-conditions{
+        margin-top: 30px;
+        padding-left: 15px !important;
+    }
+    .terms-conditions input[type="checkbox"]
+    {
+        margin-bottom: 0 !important;
+    }
+}

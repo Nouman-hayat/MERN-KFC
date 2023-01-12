@@ -1,0 +1,78 @@
+.user-profile-parent .container{
+    max-width: 1140px;
+}
+
+.user-profile-parent .hero-section{
+    width: 100%;
+    height: 300px;
+    padding: 30px;
+    background-color: var(--bs-dark);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+}
+
+.user-profile-parent h6{
+    color: white;
+    font-size: 30px;
+}
+.personal-details{
+    color: white;
+    letter-spacing: 1px;
+}
+.user-details{
+    padding:  40px 20px;
+    background-color: rgb(238, 237, 237);
+}
+
+.user-details h4{
+    display: inline-block;
+    font-size: 28px;
+    color: var(--primary-red);
+    margin-bottom: 50px;
+    position: relative;
+}
+.user-details h4::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-red);
+}
+.user-details h6::after{
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--bs-blue);
+}
+.user-details p{
+    font-size: 18px;
+    color: #212529;
+
+}
+.user-details .personal-details {
+
+    border-radius: 6px;
+    padding: 30px;
+    background-color: var(--bs-white);
+}
+
+.user-details .order-details {
+
+    border-radius: 6px;
+    padding: 30px;
+    background-color: var(--bs-white);
+}
+
+.order-details-inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 30px;
+    align-items: flex-start;
+}

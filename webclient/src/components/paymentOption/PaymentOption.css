@@ -1,0 +1,30 @@
+.option {
+    border: 1px solid rgb(228, 227, 227 , 0.5);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+.option label {
+    margin-left: 10px ;
+    font-family: var(--assistant);
+}
+.option input[type="radio"]{
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    border-radius: 50%;
+
+    background-color: red;
+    border: 5px solid var(--primary-red);
+    outline: 2px solid  var(--primary-red);
+    outline-offset: 3px;
+
+}
+.option-active {
+    padding: 15px;
+    font-family: var(--assistant);
+    background-color: rgb(231, 231, 231);
+    font-size: 14px;
+}

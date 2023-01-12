@@ -1,0 +1,30 @@
+.kfc-card {
+    padding: 20px;
+    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+}
+.checkout-left .kfc-cards .kfc-card:first-child{
+    padding-bottom: 36px;
+}
+.shopping-bag-item {
+    display: grid;
+    grid-template-columns:15% 75% ;
+    gap: 20px;
+    margin-top: 20px;
+}
+.shopping-bag-item h6 {
+    color: var(--primary-red);
+    font-size: 18px;
+}
+.order-summary-details  {
+    display: flex;
+    justify-content: space-between;
+
+}
+.order-summary-details:nth-child(3) {
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(231, 229, 229 , 0.7);
+}
+.order-summary-details span {
+    font-family: var(--assistant);
+    padding: 3px 0;
+}
