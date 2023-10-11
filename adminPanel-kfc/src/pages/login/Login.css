@@ -1,0 +1,57 @@
+.login-component{
+    padding: 50px;
+    background-color: var(--bs-dark) ;
+}
+.login-component-inner{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+}
+.login-component::after{
+    content: '';
+    position: absolute;
+    top: -40px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 1000px 1000px 0;
+    border-color: transparent var(--bs-primary) transparent transparent;
+
+}
+.login-component-inner .form{
+    width: 500px;
+    padding: 20px;
+    position: relative;
+    z-index: 10;
+    justify-self: flex-end;
+    background-color: var(--bs-white);
+    color: var(--bs-dark);
+    text-align: center;
+}
+.login-component-inner .form span{
+    cursor: pointer;
+}
+.form h2{
+    color: var(--bs-dark);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.login-component-inner .form .form-inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    gap: 20px;
+}
+.login-component-inner .form .form-inner input:nth-child(3)
+{
+    grid-column: 1/3;
+}
+
+.login-component-inner .form .form-inner input{
+    padding: 5px 10px;
+}
