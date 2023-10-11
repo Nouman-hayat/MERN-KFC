@@ -1,1 +1,1 @@
-export const API_URL = "https://us-central1-kfc--backend.cloudfunctions.net/app"
+export const API_URL = "https://kfc-mern-app-nouman-hayat.onrender.com";
