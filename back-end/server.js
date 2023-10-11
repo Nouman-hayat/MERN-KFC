@@ -20,11 +20,17 @@ app.use(cookieParser())
 
 //USE CORS
 let cors = require("cors")
-app.use(cors({
-    origin:['http://localhost:3001' , 'http://localhost:3000' 
-    , "https://kfc-awm.netlify.app" , "https://kfc-admin.netlify.app"],
-    credentials: true
-}))
+app.use(
+	cors({
+		origin: [
+			"http://localhost:3001",
+			"http://localhost:3000",
+			"https://noumanhayat-kfcapps.netlify.app",
+			"https://noumanhayat-admin-kfcapps.netlify.app",
+		],
+		credentials: true,
+	})
+);
 
 var bodyParser = require('body-parser')
 app.use(bodyParser({limit : '20mb'}))
